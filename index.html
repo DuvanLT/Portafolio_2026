@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Leadership | [Tu Nombre]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505;
+            color: #d4d4d4;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .nav-blur {
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #a3a3a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-divider {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+
+        /* Estilo específico para negritas dentro del modal */
+        #modal-content b,
+        #modal-content strong {
+            color: #ffffff !important;
+            /* Blanco puro */
+            font-weight: 700;
+            /* Grosor extra para resaltar */
+        }
+
+        /* Mejora opcional: que los párrafos tengan un gris más legible */
+        #modal-content {
+            color: #9ca3af;
+            /* Un gris intermedio (text-gray-400) */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 nav-blur">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-white font-bold tracking-tighter text-xl underline decoration-blue-600">
+                [DM]
+            </div>
+            <div class="hidden md:flex space-x-10 text-xs uppercase tracking-widest font-medium">
+                <a href="#experiencia" class="hover:text-blue-500 transition">Experiencia</a>
+                <a href="#sobre-mi" class="hover:text-blue-500 transition">Perfil</a>
+                <a href="#proyectos" class="hover:text-blue-500 transition">Proyectos</a>
+                <a href="#blog" class="hover:text-blue-500 transition">Blog</a>
+            </div>
+            <a href="mailto:duvanmncll@gmail.com"
+                class="px-5 py-2 border border-white text-xs uppercase tracking-widest hover:bg-white hover:text-black transition">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex items-center px-6 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full gap-12">
+
+            <div class="flex-1 ">
+                <p
+                    class="text-blue-600 font-mono mb-6 tracking-[0.3em] mt-24  md:m-0 text-[10px] ml-2 uppercase font-bold">
+                    Full-Stack
+                    Ingeniero de IA</p>
+                <h1 class="text-7xl md:text-9xl font-extrabold tracking-tighter text-white leading-none">
+                    Duvan<br /><span class="text-blue-800">Mancilla.</span>
+                </h1>
+                <div class="mt-10 flex gap-6 items-center">
+                    <span class="h-[1px] w-12 bg-gray-800"></span>
+                    <p class="text-xs uppercase tracking-[0.3em] text-gray-500 font-medium">Más de 2 años de experiencia
+                        Laboral
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full md:w-80 bg-[#080808] border border-gray-900 p-8 rounded-sm shadow-2xl xs:mt-24">
+                <h3
+                    class="text-[9px] uppercase tracking-[0.4em] text-gray-600 mb-8 font-bold border-b border-gray-900 pb-2">
+                    Resumen general
+                </h3>
+
+                <div class="space-y-6">
+                    <div class="group">
+                        <p class="text-[10px] text-blue-500 font-mono mb-1">01. Eficiencia</p>
+                        <p class="text-xs text-gray-300 font-medium leading-tight group-hover:text-white transition">
+                            Análisis y <b class="font-bold text-white">optimización de problemas</b> técnicos.
+                        </p>
+                    </div>
+
+                    <div class="group">
+                        <p class="text-[10px] text-blue-500 font-mono mb-1">02. Innovación</p>
+                        <p class="text-xs text-gray-300 font-medium leading-tight group-hover:text-white transition">
+                            Diseño e <b class="font-bold text-white">implementación de IA</b> en flujos de trabajo
+                            reales.
+                        </p>
+                    </div>
+
+                    <div class="group">
+                        <p class="text-[10px] text-blue-500 font-mono mb-1">03. Desarrollo</p>
+                        <p class="text-xs text-gray-300 font-medium leading-tight group-hover:text-white transition">
+                            Arquitectura de <b class="font-bold text-white">sistemas a la medida</b> para tu empresa.
+                        </p>
+                    </div>
+
+                    <div class="pt-6 border-t border-gray-900 mt-4">
+                        <a href="https://api.whatsapp.com/send?phone=573046434125&text=Hola%2C%20me%20interesa%20tu%20perfil%20para%20un%20proyecto%20espec%C3%ADfico.%20%C2%BFTienes%20disponibilidad%20para%20una%20colaboraci%C3%B3n%3F"
+                            class="flex items-center justify-between group transition-all duration-500">
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-white group-hover:text-blue-500 transition-colors">Agendar
+                                Consultoría</span>
+                            <svg class="group-hover:translate-x-1 transition-transform duration-500 ease-in-out"
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="experiencia" class="py-32 px-6 max-w-6xl mx-auto section-divider">
+        <div class="flex justify-between items-center mb-20">
+            <h2 class="text-[10px] uppercase tracking-[0.3em] text-blue-500 font-bold">Trayectoria</h2>
+
+            <div class="flex gap-2">
+                <button onclick="scrollCarousel(-400)"
+                    class="p-2 border border-gray-800 text-gray-600 hover:text-white hover:border-blue-500 transition">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <button onclick="scrollCarousel(400)"
+                    class="p-2 border border-gray-800 text-gray-600 hover:text-white hover:border-blue-500 transition">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="carousel-experiencia" class="flex gap-16 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4">
+
+            <div
+                class="min-w-[300px] md:min-w-[400px] snap-start border-l border-gray-800 pl-8 group hover:border-blue-600 transition-colors duration-500">
+                <span class="text-xs font-mono text-gray-600 uppercase tracking-widest">2025 — Actualidad</span>
+                <h3 class="text-2xl font-bold text-white mt-6 mb-4 tracking-tight">Analista de Integraciones</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Integración End-To-End entre diferentes sistemas y transformación de datos.
+                </p>
+                <div class="flex gap-2">
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">Enterprise</span>
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">ETL</span>
+                </div>
+            </div>
+
+            <div
+                class="min-w-[300px] md:min-w-[400px] snap-start border-l border-gray-800 pl-8 group hover:border-blue-600 transition-colors duration-500">
+                <span class="text-xs font-mono text-gray-600 uppercase tracking-widest">2025 — Actualidad</span>
+                <h3 class="text-2xl font-bold text-white mt-6 mb-4 tracking-tight">Full-Stack IA Aplicada</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Plataforma educativa de aprendizaje autónomo apoyada en inteligencia artificial.
+                </p>
+                <div class="flex gap-2">
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">LLMs</span>
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">RAG</span>
+                </div>
+            </div>
+
+            <div
+                class="min-w-[300px] md:min-w-[400px] snap-start border-l border-gray-800 pl-8 group hover:border-blue-600 transition-colors duration-500">
+                <span class="text-xs font-mono text-gray-600 uppercase tracking-widest">2024 — Actualidad</span>
+                <h3 class="text-2xl font-bold text-white mt-6 mb-4 tracking-tight">Freelance</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Desarrollo de software a medida y soluciones enfocadas al usuario final.
+                </p>
+                <div class="flex gap-2">
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">SOLUCION
+                        DE PROBLEMAS</span>
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">UX/UI</span>
+                </div>
+            </div>
+
+            <div
+                class="min-w-[300px] md:min-w-[400px] snap-start border-l border-gray-800 pl-8 group hover:border-blue-600 transition-colors duration-500">
+                <span class="text-xs font-mono text-gray-600 uppercase tracking-widest">2024 — 2025</span>
+                <h3 class="text-2xl font-bold text-white mt-6 mb-4 tracking-tight">Desarrollador Full Stack</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Solucion de tareas como desarrollo de landing pages o sistemas pequeños en una pequeña agencia de
+                    marketing digital.
+                </p>
+                <div class="flex gap-2">
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">SOLUCION
+                        DE PROBLEMAS</span>
+                    <span
+                        class="text-[9px] px-2 py-1 bg-[#0a0a0a] text-gray-600 border border-gray-900 uppercase font-bold tracking-tighter">UX/UI</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        /* Mantiene la limpieza visual ocultando la barra de scroll */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+    <script>
+        function scrollCarousel(distance) {
+            document.getElementById('carousel-experiencia').scrollBy({
+                left: distance,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <section id="sobre-mi" class="py-32 bg-[#080808] px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xs uppercase tracking-[0.5em] text-blue-500 mb-16 text-center">Ingeniero de Sistemas</h2>
+
+            <div class="grid md:grid-cols-3 gap-12">
+
+                <div class="space-y-8">
+                    <h3 class="text-white font-bold text-lg border-b border-gray-800 pb-4">Objetivos 2026</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-sm font-bold text-blue-400">
+                                Desarrollo de Saas para PYMES
+                            </h4>
+                            <p class="text-gray-500 text-sm mt-1">Diseñar y lanzar un SaaS para PYMES con enfoque en
+                                automatización, eficiencia operativa y crecimiento sostenible.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-blue-400">Mejora en la comunicación</h4>
+                            <p class="text-gray-500 text-sm mt-1">Mejorar mi comunicación técnica y estratégica para
+                                expresar ideas con claridad ante perfiles técnicos y de negocio.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-blue-400">Soluciones enfocadas al entorno</h4>
+                            <p class="text-gray-500 text-sm mt-1">Diseñar soluciones comprensibles y adoptables,
+                                enfocadas en generar impacto real y sostenibilidad en su entorno.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 bg-[#0a0a0a] p-8 border border-gray-900 rounded-sm">
+                    <h3 class="text-white font-bold text-lg border-b border-gray-800 pb-4">Stack Técnico</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">Python
+                        </span>
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">Javascript
+                            / Typescript</span>
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">Node.js
+                            / Express</span>
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">MySQL
+                            / SQL Server</span>
+                        <span
+                            class="px-3 py-1 bg-blue-900/20 border border-blue-800/50 text-[10px] text-blue-300 rounded">MongoDB</span>
+                        <span
+                            class="px-3 py-1 bg-blue-900/20 border border-blue-800/50 text-[10px] text-blue-300 rounded">Firebase</span>
+                        <span
+                            class="px-3 py-1 bg-blue-900/20 border border-blue-800/50 text-[10px] text-blue-300 rounded">SQLite</span>
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">Vue.js
+                            / Nuxt.js</span>
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">React
+                            / Next.js</span>
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">Git</span>
+                        <span
+                            class="px-3 py-1 bg-gray-900 border border-gray-800 text-[10px] text-gray-300 rounded">Tailwind
+                            / Boostrap</span>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Metodologías</h4>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li>• Metodologias basadas en SCRUM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <h3 class="text-white font-bold text-lg border-b border-gray-800 pb-4">Soft Skills Ejecutivas</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-1 h-1 bg-blue-500 rounded-full mt-2"></div>
+                            <p class="text-sm text-gray-400 leading-snug">
+                                <strong class="text-gray-200">Aprendizaje Ágil:</strong> Rápida adquisición y aplicación
+                                práctica de nuevas tecnologías.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-1 h-1 bg-blue-500 rounded-full mt-2"></div>
+                            <p class="text-sm text-gray-400 leading-snug">
+                                <strong class="text-gray-200">Creatividad Estratégica:</strong> Diseño de soluciones
+                                optimizadas con enfoque en escalabilidad.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-1 h-1 bg-blue-500 rounded-full mt-2"></div>
+                            <p class="text-sm text-gray-400 leading-snug">
+                                <strong class="text-gray-200">Mentalidad de Producto:</strong> Análisis de eficiencia,
+                                costos y viabilidad antes de ejecutar.
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-1 h-1 bg-blue-500 rounded-full mt-2"></div>
+                            <p class="text-sm text-gray-400 leading-snug">
+                                <strong class="text-gray-200">Ejecución Resiliente:</strong> Capacidad de mantener foco
+                                y resolver en contextos exigentes.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section id="sobre-mi" class="py-32 bg-[#080808] px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-xs uppercase tracking-[0.5em] text-gray-500 mb-8">Perfil</h2>
+                <div class="space-y-6 text-gray-400 leading-loose text-lg">
+                    <p>
+                        Profesional con mentalidad de producto y enfoque empresarial, orientado a la optimización,
+                        automatización y generación de impacto sostenible.
+                    </p>
+                    <p>
+                        He impulsado mejoras que han generado ahorros superiores al 45% en costos operativos y reducido
+                        en más del 70% los tiempos de ejecución mediante la implementación de soluciones eficientes y
+                        escalables.
+                    </p>
+                    <p>Priorizo decisiones basadas en viabilidad estratégica y rendimiento, manteniendo solidez en
+                        entornos exigentes y contribuyendo activamente al rendimiento colectivo en equipos
+                        multidisciplinarios.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-[#111] p-6 md:p-10 border border-gray-900">
+                    <h4 class="text-3xl font-bold text-white mb-2">+15</h4>
+                    <p class="text-[10px] md:text-xs uppercase tracking-widest text-blue-500">Problemas Criticos
+                        Resueltos</p>
+                </div>
+                <div class="bg-[#111] p-6 md:p-10 border border-gray-900">
+                    <h4 class="text-3xl font-bold text-white mb-2">+7</h4>
+                    <p class="text-[10px] md:text-xs uppercase tracking-widest text-blue-500">Procesos Optimizados</p>
+                </div>
+                <div class="bg-[#111] p-6 md:p-10 border border-gray-900">
+                    <h4 class="text-3xl font-bold text-white mb-2">+4</h4>
+                    <p class="text-[10px] md:text-xs uppercase tracking-widest text-blue-500">
+                        Proyectos Entregados</p>
+                </div>
+                <div class="bg-[#111] p-6 md:p-10 border border-gray-900">
+                    <h4 class="text-3xl font-bold text-white mb-2">8+</h4>
+                    <p class="text-[10px] md:text-xs uppercase tracking-widest text-blue-500"> Eventos
+                        Técnicos
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="mb-20">
+            <h2 class="text-[10px] uppercase tracking-[0.5em] text-blue-600 mb-4 font-bold">Proyectos</h2>
+            <p class="text-3xl font-light text-white tracking-tight">Soluciones de <span
+                    class="text-gray-600 italic">Valor personal</span></p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4 h-full">
+
+            <div
+                class="md:col-span-2 md:row-span-2 bg-[#080808] border border-gray-900 p-10 flex flex-col justify-between group hover:border-blue-500/50 transition-all duration-500 relative overflow-hidden">
+                <div class="relative z-10">
+                    <span
+                        class="text-[10px] font-mono text-blue-500 uppercase tracking-widest bg-blue-500/10 px-3 py-1 rounded-full">Saas</span>
+                    <h3 class="text-4xl font-bold text-white mt-8 mb-6 tracking-tighter leading-none">CRM
+                        <br />PYMES
+                    </h3>
+                    <p class="text-gray-400 max-w-md leading-relaxed text-lg font-light">
+                        Solución diseñada para acelerar la transformación digital de pequeñas empresas con un enfoque
+                        práctico y rentable, ofreciendo a su vez una alternativa eficiente para compañías medianas que
+                        buscan optimizar su operación sin la complejidad de un CRM tradicional.
+                    </p>
+                </div>
+
+                <div class="mt-12 flex items-center gap-6 z-10">
+                    <!--<div class="text-left">
+                        <p class="text-2xl font-bold text-white tracking-tight">$5</p>
+                        <p class="text-[9px] uppercase tracking-widest text-gray-600">Costo anual</p>
+                    </div>
+                    
+                    <div class="h-8 w-[1px] bg-gray-800"></div>
+                    <div class="text-left">
+                        <p class="text-2xl font-bold text-white tracking-tight">0ms</p>
+                        <p class="text-[9px] uppercase tracking-widest text-gray-600">Latencia Core</p>
+                    </div>
+                       -->
+                    <a class="ml-auto w-12 h-12 rounded-full border border-gray-800 flex items-center justify-center text-white 
+           transition-all duration-300 ease-in-out
+           hover:bg-blue-600 hover:border-blue-600 rrotate-[25deg] active:scale-95">
+
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+
+                    </a>
+                </div>
+                <div
+                    class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/5 rounded-full blur-3xl group-hover:bg-blue-600/10 transition-all">
+                </div>
+            </div>
+
+            <div
+                class="bg-[#080808] border border-gray-900 p-8 flex flex-col justify-between hover:border-gray-700 transition-all">
+                <div>
+                    <span class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">UX/UI</span>
+                    <h3 class="text-xl font-bold text-white mt-4 mb-3 tracking-tight">Wikisport</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Desarrollo de enciclopedia de vehículos enfocado en la experiencia de usuario y SEO con más de
+                        300 visitantes por mes y top 10 en Google en el nicho.
+                    </p>
+                </div>
+
+                <div class="mt-8 flex items-center justify-between">
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-[9px] text-gray-600 border border-gray-800 px-2 py-1 uppercase font-bold">UX/UI</span>
+                        <span
+                            class="text-[9px] text-gray-600 border border-gray-800 px-2 py-1 uppercase font-bold">SEO</span>
+                    </div>
+
+                    <a href="https://www.wikisportco.com/" target="_blank"
+                        class="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-white transition-all duration-300 hover:bg-blue-600 hover:border-blue-600 hover:rotate-[25deg] active:scale-90">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M7 17L17 7M17 7H7M17 7v10" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-blue-600 p-8 flex flex-col justify-between group cursor-pointer">
+                <h3 class="text-xl font-bold text-white leading-tight tracking-tight">Filosofia de<br /> Aprendizaje
+                </h3>
+                <p class="text-blue-200 text-xs font-medium leading-relaxed mt-4">
+                    Ejecuto proyectos experimentales enfocados en el dominio de herramientas emergentes, asegurando que
+                    cada implementación técnica sea una base sólida para futuros ecosistemas
+                </p>
+                <div class="mt-6 flex justify-end text-black">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M12 5v14M5 12h14" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="blog" class="py-32 bg-[#050505] px-6 section-divider">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-start gap-20">
+
+            <div class="lg:sticky lg:top-32">
+                <h2 class="text-[10px] uppercase tracking-[0.5em] text-gray-500 mb-4 font-bold">BLOG</h2>
+                <p class="text-3xl font-light text-white tracking-tight leading-none">
+                    Notas <br /> <span class="text-gray-700 italic">de Ingeniería</span>
+                </p>
+            </div>
+
+            <div class="flex-1 w-full border-t border-gray-900">
+
+                <div onclick="openModal('La vida es un cronograma', 'Tu primera empresa será tu vida', 'Feb 18, 2026', 'Cuando pensamos en una empresa, imaginamos una organización formal, con empleados y productos. Pero, ¿y si te dijera que tu primera empresa es tu propia vida? Así como cualquier negocio, tu vida es un proyecto en constante ajuste. <b>Es la primera empresa en la que eres tanto el CEO como el empleado</b>, y el éxito depende de tu capacidad de adaptarte.<br/><br/>Ajustar tu vida a los tiempos no es solo una cuestión de tener una agenda apretada, sino de comprender las necesidades cambiantes. Hay momentos en los que ciertos proyectos de tu vida real se convierten en prioridad: tal vez quieras avanzar en tu formación, cambiar de carrera o dedicar más tiempo a tu familia. Y está bien. De la misma manera, otros proyectos pueden aplazarse o, incluso, cancelarse, si no se alinean con tu ruta actual.<br/><br/>Esta administración consciente de tus recursos (tiempo, energía, prioridades) te permitirá alcanzar tus objetivos de forma más rápida y eficiente. Al igual que un negocio, no se trata solo de trabajar duro, sino de trabajar inteligentemente. Ajusta tu brújula, toma decisiones con propósito y recuerda: tu vida es tu primera empresa, y su éxito depende de ti.')"
+                    class="group relative py-12 flex justify-between items-center border-b border-gray-900 cursor-pointer transition-all duration-500 ease-in-out">
+
+                    <div
+                        class="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/[0.02] transition-all duration-500">
+                    </div>
+
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-3">
+                            <span
+                                class="text-[10px] text-blue-500 font-mono font-bold tracking-widest uppercase italic">La
+                                vida es un cronograma</span>
+                            <span class="w-1 h-1 rounded-full bg-gray-800"></span>
+                            <span class="text-[10px] text-gray-600 font-mono">Feb 18, 2026</span>
+                        </div>
+                        <h4
+                            class="text-2xl md:text-3xl font-bold text-gray-400 group-hover:text-white transition-colors duration-300 tracking-tighter">
+                            Tu primera empresa sera tu vida
+                        </h4>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-end gap-2">
+                        <span
+                            class="mr-4 text-gray-800 group-hover:text-blue-600 transition-all duration-500 transform group-hover:translate-x-2 group-hover:rotate-[15deg]">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg>
+                        </span>
+                        <span
+                            class="text-[9px] mr-4 uppercase tracking-widest text-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            Leer más
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="py-20 px-6 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-end gap-12">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-white tracking-tighter">Hora de Hablar.</h2>
+                <div class="flex gap-6 text-sm font-mono text-gray-500">
+                    <a href="https://www.linkedin.com/in/duvan-mancilla/" target="_blank"
+                        class="hover:text-blue-400 transition">LinkedIn</a>
+                    <a href="https://github.com/DuvanLT" target="_blank"
+                        class="hover:text-blue-400 transition">Github</a>
+                    <a href="https://api.whatsapp.com/send?phone=573046434125&text=Hola%2C%20me%20interesa%20tu%20perfil%20para%20un%20proyecto%20espec%C3%ADfico.%20%C2%BFTienes%20disponibilidad%20para%20una%20colaboraci%C3%B3n%3F"
+                        target="_blank" class="hover:text-blue-400 transition">WhatsApp</a>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-[10px] text-gray-400 uppercase tracking-[0.4em] mb-2">© 2026 Reservado — Duvan Mancilla
+                </p>
+                <p class="text-xs text-gray-400">Cali, Valle del Cauca, Colombia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="blog-modal" class="fixed inset-0 z-[100] hidden items-center justify-end transition-all duration-700">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-md opacity-0 transition-opacity duration-700"
+            id="modal-overlay" onclick="closeModal()"></div>
+
+        <div id="modal-panel"
+            class="relative h-full w-full md:w-[75%] bg-[#080808] border-l border-white/5 opacity-0 scale-[0.98] transition-all duration-700 ease-out flex flex-col">
+
+            <button onclick="closeModal()"
+                class="absolute top-10 left-10 text-gray-500 hover:text-white transition-all duration-300 z-50">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div class="h-full overflow-y-auto px-8 md:px-24 py-24">
+                <div class="max-w-3xl mx-auto">
+                    <span id="modal-category"
+                        class="text-[10px] text-blue-500 font-mono font-bold tracking-[0.4em] uppercase"></span>
+                    <h2 id="modal-title"
+                        class="text-4xl md:text-6xl font-bold text-white mt-6 tracking-tighter mb-12 leading-tight italic">
+                    </h2>
+
+                    <p id="modal-date" class="text-xs text-gray-200 font-mono mt-2 uppercase tracking-widest "></p>
+                    <div class="h-[1px] w-12 bg-blue-600 my-2 mb-6"></div>
+                    <div id="modal-content" class="text-gray-400 text-lg leading-relaxed space-y-8 font-light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
